@@ -30,6 +30,7 @@
   "dependencies": {
     "@feizheng/next-js-core2": "^2.4.0",
     "json2md": "^1.6.5",
+    "prettier": "^1.19.1",
     "react-docgen": "^5.1.0"
   }
 }

@@ -1,10 +1,11 @@
 var reactDocs = require('react-docgen');
 var fs = require('fs');
 var json2md = require('json2md');
+var prettier = require('prettier');
 
 require('@feizheng/next-js-core2');
 
-module.exports = function(inFilePath) {
+module.exports = function(inFilePath, inOptions) {
   var content = fs.readFileSync(inFilePath);
   var info = reactDocs.parse(content);
   var rows = [];
@@ -18,10 +19,12 @@ module.exports = function(inFilePath) {
     ]);
   });
 
-  return json2md({
+  var mdstring = json2md({
     table: {
       headers: ['Name', 'Type', 'Default', 'Description'],
       rows: rows
     }
   });
+
+  return prettier.format(mdstring, { parser: 'markdown' });
 };
