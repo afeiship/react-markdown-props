@@ -19,7 +19,9 @@ module.exports = function(inFilePath) {
   });
 
   return json2md({
-    table: ['Name', 'Type', 'Default', 'Description'],
-    rows: rows
+    table: {
+      headers: ['Name', 'Type', 'Default', 'Description'],
+      rows: rows
+    }
   });
 };

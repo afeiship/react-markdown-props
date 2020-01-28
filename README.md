@@ -3,7 +3,7 @@
 
 ## installation
 ```shell
-npm install -S @feizheng/react-markdown-props 
+npm install -S @feizheng/react-markdown-props
 ```
 
 ## usage
