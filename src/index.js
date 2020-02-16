@@ -11,12 +11,9 @@ module.exports = function(inFilePath, inOptions) {
   var rows = [];
 
   nx.forIn(info.props, function(key, value) {
-    rows.push([
-      key,
-      value.type.name,
-      nx.get(value, 'defaultValue.value') || '-',
-      value.description
-    ]);
+    var _value = nx.get(value, 'defaultValue.value', '-');
+    _value.includes('\n') && (_value = '-');
+    rows.push([key, value.type.name, _value, value.description]);
   });
 
   var mdstring = json2md({
