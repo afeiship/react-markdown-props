@@ -13,12 +13,18 @@ module.exports = function(inFilePath, inOptions) {
   nx.forIn(info.props, function(key, value) {
     var _value = nx.get(value, 'defaultValue.value', '-');
     _value.includes('\n') && (_value = '-');
-    rows.push([key, value.type.name, _value, value.description]);
+    rows.push([
+      key,
+      value.type.name,
+      String(value.required),
+      _value,
+      value.description
+    ]);
   });
 
   var mdstring = json2md({
     table: {
-      headers: ['Name', 'Type', 'Default', 'Description'],
+      headers: ['Name', 'Type', 'Required', 'Default', 'Description'],
       rows: rows
     }
   });
