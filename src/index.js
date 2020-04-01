@@ -15,7 +15,7 @@ module.exports = function(inFilePath, inOptions) {
     _value.includes('\n') && (_value = '-');
     rows.push([
       key,
-      value.type.name,
+      nx.get(value, 'type.name'),
       String(value.required),
       _value,
       value.description
