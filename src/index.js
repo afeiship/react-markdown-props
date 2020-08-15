@@ -13,7 +13,6 @@ module.exports = function(inFilePath, inOptions) {
   nx.forIn(info.props, function(key, value) {
     var _value = nx.get(value, 'defaultValue.value', '-');
     _value.includes('\n') && (_value = '-');
-    console.log(value, _value);
     rows.push([
       key,
       nx.get(value, 'type.name'),

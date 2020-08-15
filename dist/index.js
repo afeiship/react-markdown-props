@@ -5,4 +5,4 @@
  * license: MIT
  */
 
-var reactDocs=require("react-docgen"),fs=require("fs"),json2md=require("json2md"),prettier=require("prettier");require("@feizheng/next-js-core2"),module.exports=function(e,r){var n=fs.readFileSync(e),t=reactDocs.parse(n),i=[];nx.forIn(t.props,function(e,r){var n=nx.get(r,"defaultValue.value","-");n.includes("\n")&&(n="-"),console.log(r,n),i.push([e,nx.get(r,"type.name"),String(r.required),n,r.description.split("\n")[0]])});var o=json2md({table:{headers:["Name","Type","Required","Default","Description"],rows:i}});return prettier.format(o,{parser:"markdown"})};
+var reactDocs=require("react-docgen"),fs=require("fs"),json2md=require("json2md"),prettier=require("prettier");require("@feizheng/next-js-core2"),module.exports=function(e,r){var t=fs.readFileSync(e),n=reactDocs.parse(t),i=[];nx.forIn(n.props,function(e,r){var t=nx.get(r,"defaultValue.value","-");t.includes("\n")&&(t="-"),i.push([e,nx.get(r,"type.name"),String(r.required),t,r.description.split("\n")[0]])});var a=json2md({table:{headers:["Name","Type","Required","Default","Description"],rows:i}});return prettier.format(a,{parser:"markdown"})};
