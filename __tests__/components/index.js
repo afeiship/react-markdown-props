@@ -22,7 +22,21 @@ export default class BoilerplateReactComponent extends Component {
     /**
      * The change handler.
      */
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    /**
+     * If element destroyed when visible to false.
+     * In modal case:
+     * 1. set the value to true, you need not care z-index
+     * 2. If only has one modal, you can set this to false.
+     */
+    destroyable: PropTypes.bool,
+    /**
+     * Backdrop props or not display backdrop.
+     */
+    backdrop: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.object
+    ])
   };
 
   static defaultProps = {
