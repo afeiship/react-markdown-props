@@ -3,7 +3,7 @@ var fs = require('fs');
 var json2md = require('json2md');
 var prettier = require('prettier');
 
-require('@feizheng/next-js-core2');
+require('@jswork/next');
 
 module.exports = function(inFilePath, inOptions) {
   var content = fs.readFileSync(inFilePath);

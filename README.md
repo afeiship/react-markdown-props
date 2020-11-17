@@ -8,12 +8,12 @@
 
 ## installation
 ```shell
-npm install -S @feizheng/react-markdown-props
+npm install -S @jswork/react-markdown-props
 ```
 
 ## usage
 ```js
-import rmp from '@feizheng/react-markdown-props';
+import rmp from '@jswork/react-markdown-props';
 
 rmp('./src/components/index.js');
 
@@ -34,14 +34,14 @@ rmp('./src/components/index.js');
 ## license
 Code released under [the MIT license](https://github.com/afeiship/react-markdown-props/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/react-markdown-props
-[version-url]: https://npmjs.org/package/@feizheng/react-markdown-props
+[version-image]: https://img.shields.io/npm/v/@jswork/react-markdown-props
+[version-url]: https://npmjs.org/package/@jswork/react-markdown-props
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/react-markdown-props
+[license-image]: https://img.shields.io/npm/l/@jswork/react-markdown-props
 [license-url]: https://github.com/afeiship/react-markdown-props/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/react-markdown-props
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/react-markdown-props
 [size-url]: https://github.com/afeiship/react-markdown-props/blob/master/dist/react-markdown-props.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/react-markdown-props
-[download-url]: https://www.npmjs.com/package/@feizheng/react-markdown-props
+[download-image]: https://img.shields.io/npm/dm/@jswork/react-markdown-props
+[download-url]: https://www.npmjs.com/package/@jswork/react-markdown-props
