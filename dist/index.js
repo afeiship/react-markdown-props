@@ -1,7 +1,7 @@
 /*!
  * name: @jswork/react-markdown-props
  * url: https://github.com/afeiship/react-markdown-props
- * version: 1.0.0
+ * version: 1.0.1
  * license: MIT
  */
 

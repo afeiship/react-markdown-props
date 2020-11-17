@@ -1,6 +1,6 @@
 {
   "name": "@jswork/react-markdown-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate markdown properties string.",
   "homepage": "https://github.com/afeiship/react-markdown-props",
   "author": {
@@ -34,5 +34,11 @@
     "json2md": "^1.6.5",
     "prettier": "*",
     "react-docgen": "^5.2.1"
-  }
+  },
+  "keywords": [
+    "react",
+    "docs",
+    "react-docgen",
+    "properties"
+  ]
 }
