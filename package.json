@@ -14,7 +14,6 @@
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
-    "@jswork/next": "^1.0.2",
     "@jswork/next-nice-comments": "^1.0.1",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -29,8 +28,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
+    "@jswork/next": "^1.0.2",
     "json2md": "^1.6.5",
-    "prettier": "^1.19.1",
+    "prettier": "*",
     "react-docgen": "^5.2.1"
   }
 }
